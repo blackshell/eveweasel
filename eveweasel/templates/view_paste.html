@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}View Weasel Paste{% endblock %}
+
+{% block content %}
+  <h1>Weasel Paste</h1>
+  <p>Viewing a paste posted on {{ paste['date'] }}</p>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <pre>{{ paste['text']|e }}</pre>
+    </div>
+  </div>
+{% endblock %}

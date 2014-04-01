@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}New Weasel Paste{% endblock %}
+
+{% block content %}
+  <h1>Weasel Paste</h1>
+  <p>Need to quickly paste a block of text to your friends?</p>
+  <form method="post">
+    <textarea class="form-control" name="text" rows="15"></textarea>
+    <br />
+    <input type="submit" name="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+{% endblock %}
